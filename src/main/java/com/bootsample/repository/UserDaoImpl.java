@@ -2,7 +2,6 @@ package com.bootsample.repository;
 
 import java.util.Map;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
@@ -12,7 +11,6 @@ import com.bootsample.entity.MyUser;
 public class UserDaoImpl implements UserDao {
     private final JdbcTemplate jdbcTemplate;
 
-    @Autowired
     public UserDaoImpl(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
